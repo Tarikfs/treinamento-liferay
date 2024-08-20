@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN"
+        "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.liferay.training.gradebook">
+    <namespace>Gradebook</namespace>
+
+    <entity local-service="true" name="Assignment" remote-service="true" uuid="true">
+
+        <!-- PK fields -->
+
+        <column name="assignmentId" primary="true" type="long"/>
+
+        <!-- Group instance -->
+
+        <column name="groupId" type="long"/>
+
+        <!-- Audit fields -->
+
+        <column name="companyId" type="long"/>
+        <column name="userId" type="long"/>
+        <column name="userName" type="String"/>
+        <column name="createDate" type="Date"/>
+        <column name="modifiedDate" type="Date"/>
+        <column name="title" type="String"/>
+        <column name="description" type="String"/>
+        <column name="dueDate" type="Date"/>
+
+        <!-- Order -->
+
+        <order by="asc">
+            <order-column name="title"/>
+        </order>
+
+        <!-- Finder methods -->
+
+        <finder name="Collection" return-type="GroupId">
+            <finder-column name="groupId"/>
+        </finder>
+
+        <!-- References -->
+
+        <!-- References to Group entity service -->
+        <reference entity="Group" package-path="com.liferay.portal"/>
+
+        <!-- entity services needed for the integration to asset framework-->
+        <reference entity="AssetEntry" package-path="com.liferay.portlet.asset"/>
+        <reference entity="AssetLink" package-path="com.liferay.portlet.asset"/>
+        <reference entity="AssetTag" package-path="com.liferay.portlet.asset"/>
+    </entity>
+
+    <!-- Exceptions -->
+    <exceptions>
+        <exception>AssignmentValidation</exception>
+    </exceptions>
+</service-builder>

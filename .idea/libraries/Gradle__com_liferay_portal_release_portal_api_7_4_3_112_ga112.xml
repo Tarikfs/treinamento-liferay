@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay.portal:release.portal.api:7.4.3.112-ga112" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.liferay.portal" artifactId="release.portal.api" version="7.4.3.112-ga112" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay.portal/release.portal.api/7.4.3.112-ga112/964c4e579df0e7bc9987d6d93822b5b2ff14d7b3/release.portal.api-7.4.3.112-ga112.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

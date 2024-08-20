@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="gradebook-workspace.modules.gradebook.gradebook-api" target="11" />
+      <module name="gradebook-workspace.modules.gradebook.gradebook-api.main" target="11" />
+      <module name="gradebook-workspace.modules.gradebook.gradebook-api.test" target="11" />
+      <module name="gradebook-workspace.modules.gradebook.gradebook-api.testIntegration" target="11" />
+      <module name="gradebook-workspace.modules.gradebook.gradebook-service" target="11" />
+      <module name="gradebook-workspace.modules.gradebook.gradebook-service.main" target="11" />
+      <module name="gradebook-workspace.modules.gradebook.gradebook-service.test" target="11" />
+      <module name="gradebook-workspace.modules.gradebook.gradebook-service.testIntegration" target="11" />
+      <module name="IdeaProjects.gradebook-workspace" target="11" />
+      <module name="IdeaProjects.gradebook-workspace.main" target="11" />
+      <module name="IdeaProjects.gradebook-workspace.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

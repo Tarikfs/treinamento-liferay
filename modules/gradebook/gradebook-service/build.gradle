@@ -1,0 +1,12 @@
+dependencies {
+	api project(":modules:gradebook:gradebook-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+}
+
+buildService {
+	apiDir = "../gradebook-api/src/main/java"
+	testDir = "../gradebook-test/src/testIntegration/java"
+}
+
+group = "com.liferay.training.gradebook"
